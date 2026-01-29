@@ -1,0 +1,39 @@
+﻿.hero-card-inner ul { padding-left: 1.1rem; display: grid; gap: 0.4rem; }
+.hero-card-inner li { list-style: disc; }
+
+.values-list { display: grid; gap: 0.6rem; padding-left: 1rem; }
+.values-list li { list-style: disc; }
+
+.skill-groups { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap: var(--space-4); }
+.skill-group { border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: var(--space-4); background: var(--color-surface); box-shadow: var(--shadow-sm); }
+
+.tech-strip h3 { margin: 0; }
+
+.project-card-links { display: flex; gap: var(--space-2); flex-wrap: wrap; }
+
+.timeline-item .highlights { margin-top: var(--space-3); display: grid; gap: 0.4rem; padding-left: 1rem; }
+.timeline-item .highlights li { list-style: disc; }
+
+.owasp-grid .info-card { align-self: stretch; }
+
+.swatch small { color: var(--color-muted); display: block; margin-top: 0.35rem; }
+
+.display { letter-spacing: -0.02em; }
+
+.tech-badges .badge { font-weight: 600; }
+
+.hero-meta .tag { background: rgba(14,165,233,0.12); }
+
+.form-actions { display: flex; gap: var(--space-3); align-items: center; flex-wrap: wrap; }
+
+.section .narrow { max-width: 760px; margin: 0 auto; }
+
+#featured-projects .card { position: relative; overflow: hidden; }
+#featured-projects .card::after { content: ""; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(14,165,233,0.06), rgba(16,76,44,0.08)); opacity: 0; transition: opacity var(--transition-med); pointer-events: none; }
+#featured-projects .card:hover::after { opacity: 1; }
+
+.badge.tag-tech { background: rgba(16,76,44,0.1); border-color: rgba(16,76,44,0.15); }
+
+.tech-badges { align-items: center; }
+
+

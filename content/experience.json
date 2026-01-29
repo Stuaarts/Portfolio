@@ -1,0 +1,67 @@
+﻿{
+  "experience": [
+    {
+      "type": "Job",
+      "title": "Server (Hospitality Events)",
+      "org": "Oliver & Bonacini Hospitality",
+      "location": "Toronto, ON",
+      "start": "Apr 2025",
+      "end": "Present",
+      "summary": "Coordinated corporate and social events in high-pressure settings, sharpening communication and incident handling skills.",
+      "highlights": [
+        "Managed guest service while coordinating across kitchen and floor teams",
+        "Practiced clear escalation and rapid decision-making",
+        "Documented shifts to improve repeatability and reduce errors"
+      ]
+    },
+    {
+      "type": "Education",
+      "title": "Computer Programming & Analysis (Advanced Diploma)",
+      "org": "George Brown College",
+      "location": "Toronto, ON",
+      "start": "Sep 2023",
+      "end": "Apr 2026 (expected)",
+      "summary": "Advanced diploma program blending software development with applied technology training.",
+      "highlights": [
+        "GPA 3.40 after 4/6 semesters completed",
+        "Projects in C#, Java, SQL, HTML/CSS/JS",
+        "Coursework in data structures, algorithms, and systems"
+      ]
+    },
+    {
+      "type": "Project",
+      "title": "Cybersecurity Labs (Google Certificates)",
+      "org": "Coursera / Google",
+      "location": "Remote",
+      "start": "2025",
+      "end": "2025",
+      "summary": "Hands-on labs covering network defense, risk management, and incident response.",
+      "highlights": [
+        "Analyzed packet captures for DNS, ICMP, and SYN flood anomalies",
+        "Produced incident reports and risk assessments aligned to NIST CSF",
+        "Used Linux and SQL to audit permissions and query security events"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Foundations of Cybersecurity",
+      "issuer": "Google / Coursera",
+      "date": "Aug 15, 2025",
+      "verify": "https://coursera.org/verify/OADPYAHIGT5W"
+    },
+    {
+      "name": "Play It Safe: Manage Security Risks",
+      "issuer": "Google / Coursera",
+      "date": "Aug 15, 2025",
+      "verify": "https://coursera.org/verify/JT3AR3D2UI35"
+    },
+    {
+      "name": "Connect and Protect: Networks and Network Security",
+      "issuer": "Google / Coursera",
+      "date": "Aug 25, 2025",
+      "verify": "https://coursera.org/verify/3X45BXQBMVM5"
+    }
+  ]
+}
+

@@ -1,0 +1,78 @@
+﻿[
+  {
+    "title": "SIEM Log Monitoring Playbook",
+    "slug": "siem-log-monitoring",
+    "category": "Security",
+    "tags": ["SIEM", "Detection", "NIST CSF"],
+    "summary": "Built reusable workflows to parse system/network logs, flag anomalies, and map findings to NIST CSF functions.",
+    "highlights": [
+      "Parsed auth and network logs to identify brute-force patterns and unusual geos",
+      "Documented response steps with containment and recovery guidance",
+      "Packaged repeatable queries to speed triage"
+    ],
+    "image": "/assets/img/placeholders/project-1.webp",
+    "links": { "github": "https://github.com/yourusername/siem-playbook", "demo": "https://example.com/siem" },
+    "featured": true
+  },
+  {
+    "title": "Secure Portfolio Frontend",
+    "slug": "secure-portfolio",
+    "category": "Web",
+    "tags": ["JavaScript", "Accessibility", "CSP"],
+    "summary": "Static portfolio with hardened headers, GSAP motion with reduced-motion respect, and data-driven content.",
+    "highlights": [
+      "Implemented CSP, frame protections, and referrer policy",
+      "Built themeable design system with CSS variables",
+      "Added ScrollTrigger micro-reveals gated by accessibility prefs"
+    ],
+    "image": "/assets/img/placeholders/project-2.webp",
+    "links": { "github": "https://github.com/yourusername/secure-portfolio", "demo": "https://example.com" },
+    "featured": true
+  },
+  {
+    "title": "Packet Analysis Lab",
+    "slug": "packet-analysis-lab",
+    "category": "Security",
+    "tags": ["Wireshark", "tcpdump", "DNS"],
+    "summary": "Analyzed PCAPs to surface DNS tunneling, SYN floods, and ICMP anomalies with clear incident writeups.",
+    "highlights": [
+      "Created incident reports mapping to Identify/Protect/Detect/Respond/Recover",
+      "Captured packet evidence and visualized flows",
+      "Recommended control hardening and monitoring"
+    ],
+    "image": "/assets/img/placeholders/project-3.webp",
+    "links": { "github": "https://github.com/yourusername/packet-lab", "demo": "https://example.com/pcap" },
+    "featured": true
+  },
+  {
+    "title": "Risk Assessment Toolkit",
+    "slug": "risk-assessment-toolkit",
+    "category": "Security",
+    "tags": ["Risk", "NIST CSF", "Reporting"],
+    "summary": "Lightweight templates to score risks, propose controls, and track remediation for simulated orgs.",
+    "highlights": [
+      "Mapped findings to NIST CSF outcomes",
+      "Produced exec-friendly summaries and backlog items",
+      "Versioned artifacts to ensure integrity"
+    ],
+    "image": "/assets/img/placeholders/project-4.webp",
+    "links": { "github": "https://github.com/yourusername/risk-toolkit", "demo": "https://example.com/risk" },
+    "featured": false
+  },
+  {
+    "title": "Full-Stack Task API (Secure Defaults)",
+    "slug": "secure-task-api",
+    "category": "Web",
+    "tags": ["C#", "ASP.NET", "API Security"],
+    "summary": "Proof-of-concept task API with input validation, structured logging, and role-based access controls.",
+    "highlights": [
+      "Implemented JWT auth and role gates",
+      "Added validation filters to reduce injection risk",
+      "Instrumented request logs for anomaly detection"
+    ],
+    "image": "/assets/img/placeholders/project-1.webp",
+    "links": { "github": "https://github.com/yourusername/secure-task-api", "demo": "https://example.com/task" },
+    "featured": false
+  }
+]
+

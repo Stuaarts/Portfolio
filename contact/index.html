@@ -1,0 +1,127 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Lucas Tavares Criscuolo</title>
+  <meta name="description" content="Contact Lucas Tavares Criscuolo for secure software collaboration.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="canonical" href="https://example.com/contact/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/pages.css">
+  <meta property="og:title" content="Contact | Lucas Tavares Criscuolo">
+  <meta property="og:description" content="Get in touch to discuss projects, security work, or opportunities.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/contact/">
+  <meta property="og:image" content="../assets/img/placeholders/project-3.webp">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script type="module" src="../assets/js/app.js" defer></script>
+</head>
+<body data-page="contact">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="brand">
+      <a class="logo" href="../index.html"><span>LC</span></a>
+      <div class="brand-text">
+        <span class="brand-name">Lucas Tavares Criscuolo</span>
+        <span class="brand-role">Software Developer • Cybersecurity</span>
+      </div>
+    </div>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="nav-toggle-line"></span>
+      <span class="nav-toggle-line"></span>
+      <span class="nav-toggle-line"></span>
+    </button>
+    <nav id="site-nav" class="primary-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about/index.html">About</a></li>
+        <li><a href="../projects/index.html">Projects</a></li>
+        <li><a href="../experience/index.html">Experience</a></li>
+        <li><a href="../security/index.html">Security</a></li>
+        <li><a href="../styleguide/index.html">Styleguide</a></li>
+        <li><a class="btn nav-cta active" href="../contact/index.html">Contact</a></li>
+      </ul>
+      <button class="btn ghost theme-toggle" type="button" aria-pressed="false" aria-label="Toggle color theme">??</button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="section hero-sub">
+      <div class="container narrow">
+        <p class="eyebrow">Contact</p>
+        <h1>Let’s talk about building securely.</h1>
+        <p class="lead">Fill the form or reach out directly. EmailJS optional; mailto fallback is always available.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <form id="contact-form" data-contact-form novalidate>
+          <div class="form-control">
+            <label for="name">Name</label>
+            <input id="name" name="name" required autocomplete="name" />
+            <small class="error" data-error-for="name"></small>
+          </div>
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required autocomplete="email" />
+            <small class="error" data-error-for="email"></small>
+          </div>
+          <div class="form-control">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <small class="error" data-error-for="message"></small>
+          </div>
+          <div class="form-actions">
+            <button class="btn primary" type="submit">Send message</button>
+            <p class="muted-text">If EmailJS keys are not set, a mailto link will open.</p>
+          </div>
+          <div class="form-status" aria-live="polite"></div>
+        </form>
+
+        <div class="info-card">
+          <h3>Direct contact</h3>
+          <ul class="list-plain">
+            <li><strong>Email:</strong> <a href="mailto:lucastcriscuolo@gmil.com">lucastcriscuolo@gmil.com</a></li>
+            <li><strong>Location:</strong> Toronto (North York), ON</li>
+            <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/lucas-tavares-criscuolo-455721237">Profile</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/yourusername">yourusername</a></li>
+          </ul>
+          <p>Response within 1–2 business days.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="brand-name">Lucas Tavares Criscuolo</p>
+        <p class="muted-text">Software Developer • Cybersecurity</p>
+      </div>
+      <div class="footer-links">
+        <a href="../index.html">Home</a>
+        <a href="../projects/index.html">Projects</a>
+        <a href="../experience/index.html">Experience</a>
+        <a href="../security/index.html">Security</a>
+      </div>
+      <div class="footer-social">
+        <a href="mailto:lucastcriscuolo@gmil.com">Email</a>
+        <a href="https://linkedin.com/in/lucas-tavares-criscuolo-455721237">LinkedIn</a>
+        <a href="https://github.com/yourusername">GitHub</a>
+      </div>
+      <div class="footer-meta">
+        <p>© <span id="year"></span> Lucas Tavares Criscuolo</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+

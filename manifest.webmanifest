@@ -1,0 +1,10 @@
+﻿{
+  "name": "Lucas Tavares Criscuolo Portfolio",
+  "short_name": "LucasC",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#F4EBD0",
+  "theme_color": "#104c2c",
+  "icons": []
+}
+

@@ -1,0 +1,122 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects | Lucas Tavares Criscuolo</title>
+  <meta name="description" content="Projects and labs across secure web, network defense, and automation.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="canonical" href="https://example.com/projects/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/pages.css">
+  <meta property="og:title" content="Projects | Lucas Tavares Criscuolo">
+  <meta property="og:description" content="Security-minded software and cybersecurity labs.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/projects/">
+  <meta property="og:image" content="../assets/img/placeholders/project-3.webp">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script type="module" src="../assets/js/app.js" defer></script>
+</head>
+<body data-page="projects">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="brand">
+      <a class="logo" href="../index.html"><span>LC</span></a>
+      <div class="brand-text">
+        <span class="brand-name">Lucas Tavares Criscuolo</span>
+        <span class="brand-role">Software Developer • Cybersecurity</span>
+      </div>
+    </div>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="nav-toggle-line"></span>
+      <span class="nav-toggle-line"></span>
+      <span class="nav-toggle-line"></span>
+    </button>
+    <nav id="site-nav" class="primary-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about/index.html">About</a></li>
+        <li><a href="../projects/index.html" class="active">Projects</a></li>
+        <li><a href="../experience/index.html">Experience</a></li>
+        <li><a href="../security/index.html">Security</a></li>
+        <li><a href="../styleguide/index.html">Styleguide</a></li>
+        <li><a class="btn nav-cta" href="../contact/index.html">Contact</a></li>
+      </ul>
+      <button class="btn ghost theme-toggle" type="button" aria-pressed="false" aria-label="Toggle color theme">??</button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="section hero-sub">
+      <div class="container">
+        <p class="eyebrow">Projects</p>
+        <h1>Security-focused builds and labs.</h1>
+        <p class="lead">Filter by domain or search by tag/title. Open details to see highlights.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filters">
+          <div class="filter-buttons" role="group" aria-label="Project filters">
+            <button class="chip active" data-filter="All">All</button>
+            <button class="chip" data-filter="Web">Web</button>
+            <button class="chip" data-filter="Mobile">Mobile</button>
+            <button class="chip" data-filter="Security">Security</button>
+          </div>
+          <label class="search-field">
+            <span class="sr-only">Search projects</span>
+            <input id="project-search" type="search" placeholder="Search by title or tag" aria-label="Search projects">
+          </label>
+        </div>
+
+        <div id="projects-grid" class="cards-grid project-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="project-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-backdrop" data-modal-close></div>
+    <div class="modal-dialog" role="document">
+      <button class="modal-close" data-modal-close aria-label="Close modal">×</button>
+      <h3 id="modal-title"></h3>
+      <p id="modal-summary" class="muted-text"></p>
+      <ul id="modal-highlights" class="list-check"></ul>
+      <div class="modal-links">
+        <a id="modal-github" class="btn outline" href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a id="modal-demo" class="btn primary" href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="brand-name">Lucas Tavares Criscuolo</p>
+        <p class="muted-text">Software Developer • Cybersecurity</p>
+      </div>
+      <div class="footer-links">
+        <a href="../index.html">Home</a>
+        <a href="../projects/index.html">Projects</a>
+        <a href="../experience/index.html">Experience</a>
+        <a href="../security/index.html">Security</a>
+      </div>
+      <div class="footer-social">
+        <a href="mailto:lucastcriscuolo@gmil.com">Email</a>
+        <a href="https://linkedin.com/in/lucas-tavares-criscuolo-455721237">LinkedIn</a>
+        <a href="https://github.com/yourusername">GitHub</a>
+      </div>
+      <div class="footer-meta">
+        <p>© <span id="year"></span> Lucas Tavares Criscuolo</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+

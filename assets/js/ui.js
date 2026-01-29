@@ -1,8 +1,6 @@
 ﻿// assets/js/ui.js
 import { openProjectModal } from './data.js';
 
-const storageKey = 'portfolio-theme';
-
 export function initUI() {
   initTheme();
   initNav();
@@ -12,23 +10,14 @@ export function initUI() {
 }
 
 function initTheme() {
-  const stored = localStorage.getItem(storageKey);
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const theme = stored || (prefersDark ? 'dark' : 'light');
+  const theme = prefersDark ? 'dark' : 'light';
   setTheme(theme);
-  document.querySelectorAll('.theme-toggle').forEach(btn => {
-    btn.setAttribute('aria-pressed', theme === 'dark');
-    btn.addEventListener('click', () => {
-      const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
-      setTheme(next);
-      btn.setAttribute('aria-pressed', next === 'dark');
-    });
-  });
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => setTheme(e.matches ? 'dark' : 'light'));
 }
 
 function setTheme(theme) {
   document.documentElement.dataset.theme = theme;
-  localStorage.setItem(storageKey, theme);
 }
 
 function initNav() {

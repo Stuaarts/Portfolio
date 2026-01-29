@@ -10,7 +10,7 @@
   cursor: pointer;
   transition: transform var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast);
 }
-.btn.primary { background: linear-gradient(135deg, var(--color-primary), #0ea5e9); color: #fff; box-shadow: var(--shadow-sm); }
+.btn.primary { background: linear-gradient(135deg, var(--color-primary), var(--color-accent)); color: #fff; box-shadow: var(--shadow-sm); }
 .btn.outline { background: transparent; border-color: var(--color-border); color: var(--color-text); }
 .btn.ghost { background: color-mix(in srgb, var(--color-bg) 90%, transparent); border-color: var(--color-border); color: var(--color-text); }
 .btn:hover { transform: translateY(-1px); box-shadow: var(--shadow-sm); }

@@ -73,6 +73,20 @@
     "image": "/assets/img/placeholders/project-1.webp",
     "links": { "github": "https://github.com/Stuaarts/secure-task-api", "demo": "https://example.com/task" },
     "featured": false
+  },
+  {
+    "title": "Hair Stylist Booking Mobile Prototype",
+    "slug": "hair-stylist-booking-mobile",
+    "category": "Mobile",
+    "tags": ["Android", "Kotlin", "Capstone"],
+    "summary": "Mobile capstone prototype for the hairstylist booking project with booking, profile, portfolio, blog, and admin-related flows.",
+    "highlights": [
+      "Built as a UI prototype for a web and mobile hairstylist booking application",
+      "Covers booking, booking history, saved preferences, portfolio, and blog-related screens",
+      "Includes user and admin flows to support the broader capstone product direction"
+    ],
+    "image": "/assets/img/placeholders/project-4.webp",
+    "featured": false
   }
 ]
 

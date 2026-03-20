@@ -23,7 +23,7 @@
       "end": "Apr 2026 (expected)",
       "summary": "Advanced diploma program blending software development with applied technology training.",
       "highlights": [
-        "GPA 3.40 after 4/6 semesters completed",
+        "Current GPA 3.53",
         "Projects in C#, Java, SQL, HTML/CSS/JS",
         "Coursework in data structures, algorithms, and systems"
       ]
@@ -61,6 +61,29 @@
       "issuer": "Google / Coursera",
       "date": "Aug 25, 2025",
       "verify": "https://coursera.org/verify/3X45BXQBMVM5"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Dean's Honour List",
+      "term": "Winter 2024",
+      "date": "Letter dated July 5, 2024",
+      "summary": "Recognized by George Brown College for academic distinction with a term GPA of 3.5 or higher.",
+      "file": "/assets/docs/awards/deans-honour-list-winter-2024.pdf"
+    },
+    {
+      "title": "Dean's Honour List",
+      "term": "Spring 2024",
+      "date": "Letter dated September 30, 2024",
+      "summary": "Recognized by George Brown College for academic distinction with a term GPA of 3.5 or higher.",
+      "file": "/assets/docs/awards/deans-honour-list-spring-2024.pdf"
+    },
+    {
+      "title": "Dean's Honour List",
+      "term": "Fall 2025",
+      "date": "Letter dated March 11, 2026",
+      "summary": "Recognized by George Brown College for academic distinction with a term GPA of 3.5 or higher.",
+      "file": "/assets/docs/awards/deans-honour-list-fall-2025.pdf"
     }
   ]
 }

@@ -4,7 +4,6 @@ const prefersReduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)'
 export function initAnimations() {
   if (prefersReduceMotion || typeof gsap === 'undefined') return;
   gsap.registerPlugin(ScrollTrigger);
-  heroIntro();
   revealOnScroll();
   microInteractions();
 }

@@ -55,10 +55,6 @@ export function cardTemplate(project) {
       <h3>${project.title}</h3>
       <p class="muted-text">${project.summary}</p>
       <div class="tag-row">${tags}</div>
-      <div class="project-card-links">
-        <a class="btn ghost" href="${project.links.github}" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a class="btn outline" href="${project.links.demo}" target="_blank" rel="noopener noreferrer">Demo</a>
-      </div>
     </article>`;
 }
 
@@ -98,9 +94,7 @@ export async function openProjectModal(slug) {
   modal.querySelector('#modal-title').textContent = project.title;
   modal.querySelector('#modal-summary').textContent = project.summary;
   const list = modal.querySelector('#modal-highlights');
-  list.innerHTML = project.highlights.map(item => `<li>${item}</li>`).join('');
-  modal.querySelector('#modal-github').href = project.links.github;
-  modal.querySelector('#modal-demo').href = project.links.demo;
+  list.innerHTML = (project.highlights || []).map(item => `<li>${item}</li>`).join('');
   modal.classList.add('open');
   modal.setAttribute('aria-hidden', 'false');
   modal.querySelector('.modal-close').focus();
@@ -136,50 +130,17 @@ export async function renderCertifications() {
     </article>`).join('');
 }
 
-export function initContactForm() {
-  const form = document.querySelector('[data-contact-form]');
-  if (!form) return;
-  const status = form.querySelector('.form-status');
-
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    const formData = new FormData(form);
-    const name = formData.get('name').trim();
-    const email = formData.get('email').trim();
-    const message = formData.get('message').trim();
-    clearErrors(form);
-    let valid = true;
-    if (!name) { setError(form, 'name', 'Name is required'); valid = false; }
-    if (!email || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { setError(form, 'email', 'Valid email required'); valid = false; }
-    if (!message) { setError(form, 'message', 'Message is required'); valid = false; }
-    if (!valid) return;
-
-    const EMAILJS_SERVICE_ID = form.dataset.emailjsService;
-    const EMAILJS_TEMPLATE_ID = form.dataset.emailjsTemplate;
-    const EMAILJS_PUBLIC_KEY = form.dataset.emailjsKey;
-
-    if (EMAILJS_PUBLIC_KEY && window.emailjs) {
-      status.textContent = 'Sending…';
-      emailjs.init(EMAILJS_PUBLIC_KEY);
-      emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, { name, email, message })
-        .then(() => { status.textContent = 'Message sent successfully.'; form.reset(); })
-        .catch(() => { status.textContent = 'Error sending. Please try again or use email link.'; });
-    } else {
-      // mailto fallback
-      const mailto = `mailto:lucastcriscuolo@gmil.com?subject=Portfolio contact from ${encodeURIComponent(name)}&body=${encodeURIComponent(message + '\n\nFrom: ' + email)}`;
-      window.location.href = mailto;
-      status.textContent = 'Opening your email client…';
-      form.reset();
-    }
-  });
-}
-
-function setError(form, field, message) {
-  const errorEl = form.querySelector(`[data-error-for="${field}"]`);
-  if (errorEl) errorEl.textContent = message;
-}
-
-function clearErrors(form) {
-  form.querySelectorAll('.error').forEach(el => el.textContent = '');
+export async function renderAwards() {
+  const { awards = [] } = await loadExperience();
+  const container = document.getElementById('awards-list');
+  if (!container) return;
+  container.innerHTML = awards.map(award => `
+    <article class="card">
+      <p class="eyebrow">${award.term}</p>
+      <h3>${award.title}</h3>
+      <p class="muted-text">${award.summary}</p>
+      <p class="meta">${award.date}</p>
+      <a class="btn outline" href="${award.file}" target="_blank" rel="noopener noreferrer">Open Letter</a>
+    </article>`).join('');
 }
 

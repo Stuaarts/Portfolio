@@ -3,7 +3,7 @@
 Security-focused multi-page static portfolio for Lucas Tavares Criscuolo.
 
 ## Structure
-- `index.html` + subpages (`about/`, `projects/`, `experience/`, `security/`, `contact/`, `styleguide/`)
+- `index.html` + subpages (`about/`, `projects/`, `capstone/`, `experience/`, `styleguide/`)
 - `assets/` CSS/JS/images, `content/` JSON data
 - Root: `sitemap.xml`, `robots.txt`, `manifest.webmanifest`, `vercel.json`
 
@@ -21,10 +21,6 @@ Security-focused multi-page static portfolio for Lucas Tavares Criscuolo.
 - Projects: `content/projects.json` (add/edit items; `featured: true` controls home section).
 - Experience & certs: `content/experience.json`.
 - Images: drop replacements into `assets/img/placeholders/` and update JSON paths.
-
-## Contact (EmailJS optional)
-- Form works with mailto fallback.
-- To enable EmailJS: add `data-emailjs-service`, `data-emailjs-template`, and `data-emailjs-key` attributes on the form in `contact/index.html`, then include EmailJS SDK.
 
 ## SEO/OG
 - Update canonical URLs and OG images per page.

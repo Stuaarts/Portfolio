@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Capstone | Lucas Tavares Criscuolo</title>
+  <meta name="description" content="Capstone details for the Hair Stylist Booking Web Application by Lucas Tavares Criscuolo.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="canonical" href="https://example.com/capstone/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/pages.css">
+  <meta property="og:title" content="Capstone | Lucas Tavares Criscuolo">
+  <meta property="og:description" content="Project summary, requirements, plan, prototype evidence, and implementation notes for the Hair Stylist Booking Web Application.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/capstone/">
+  <meta property="og:image" content="../assets/img/capstone/capstone-home.png">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script type="module" src="../assets/js/app.js" defer></script>
+</head>
+<body data-page="capstone">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="brand">
+      <a class="logo" href="../index.html"><span>LC</span></a>
+      <div class="brand-text">
+        <span class="brand-name">Lucas Tavares Criscuolo</span>
+        <span class="brand-role">Software Developer • Cybersecurity</span>
+      </div>
+    </div>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="nav-toggle-line"></span>
+      <span class="nav-toggle-line"></span>
+      <span class="nav-toggle-line"></span>
+    </button>
+    <nav id="site-nav" class="primary-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about/index.html">About</a></li>
+        <li><a href="../projects/index.html">Projects</a></li>
+        <li><a href="../capstone/index.html" class="active">Capstone</a></li>
+        <li><a href="../experience/index.html">Experience</a></li>
+        <li><a class="btn nav-cta" href="../assets/docs/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="section hero-sub">
+      <div class="container narrow">
+        <p class="eyebrow">Capstone</p>
+        <h1>Hair Stylist Booking Web Application</h1>
+        <p class="lead">Capstone work completed with BrazWebDes to improve how a hairstylist manages bookings, client feedback, and digital presence across web and mobile.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <figure class="card media-frame">
+          <img src="../assets/img/capstone/capstone-home.png" alt="Homepage screenshot from the Hair Stylist Booking Web Application showing the booking, portfolio, and admin entry points.">
+          <figcaption class="muted-text">Homepage capture from the capstone web application. The project combines booking, portfolio/testimonials, and an admin workflow in one product.</figcaption>
+        </figure>
+        <div class="info-card">
+          <h2>Project Snapshot</h2>
+          <dl class="key-facts">
+            <div>
+              <dt>Team</dt>
+              <dd>BrazWebDes</dd>
+            </div>
+            <div>
+              <dt>Project Window</dt>
+              <dd>September 15, 2025 to March 27, 2026</dd>
+            </div>
+            <div>
+              <dt>My Role</dt>
+              <dd>Team member - developer</dd>
+            </div>
+            <div>
+              <dt>Platforms</dt>
+              <dd>Web, mobile, and backend API</dd>
+            </div>
+            <div>
+              <dt>Client Context</dt>
+              <dd>Hairstylist booking business in Toronto</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Summary and Vision</p>
+          <h2>Why the project exists</h2>
+        </div>
+        <div class="cards-grid">
+          <article class="card">
+            <h3>Current problem</h3>
+            <p class="muted-text">The hairstylist was handling appointments through DMs and phone calls, which made scheduling slower and increased the chance of double-booking and no-shows.</p>
+          </article>
+          <article class="card">
+            <h3>Target solution</h3>
+            <p class="muted-text">The project introduces a booking system with available time slots, account-based booking, email updates, an admin dashboard, and a stronger digital presence through portfolio and testimonials.</p>
+          </article>
+          <article class="card">
+            <h3>Expected outcome</h3>
+            <p class="muted-text">The goal is a more professional client experience, less manual scheduling work for the hairstylist, and a cleaner way to present work, feedback, and future content.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Business Requirements</p>
+          <h2>Core scope of the capstone</h2>
+        </div>
+        <div class="cards-grid">
+          <article class="card">
+            <h3>High-level requirements</h3>
+            <ul class="list-check">
+              <li>Online booking that shows only available slots and supports booking, rescheduling, and cancellation.</li>
+              <li>Admin dashboard for schedule management, customer records, and appointment updates.</li>
+              <li>Customer profile system with appointment history and saved details.</li>
+              <li>Mobile experience that matches the main booking flow.</li>
+              <li>Portfolio and testimonials with approval and consent handling.</li>
+              <li>Optional blog support for announcements, tips, and engagement.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Project plan and status</h3>
+            <ul class="list-check">
+              <li>Planned phases covered project planning, requirements and analysis, design, development, testing, and final delivery.</li>
+              <li>Requirements and analysis were scheduled to complete by October 31, 2025.</li>
+              <li>UI/UX design and branding were scheduled to complete by November 30, 2025.</li>
+              <li>Prototype review with the client was scheduled for December 1, 2025.</li>
+              <li>The overall capstone window runs from September 15, 2025 to March 27, 2026.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Requirements, Analysis, and Design</p>
+          <h2>How the solution was framed</h2>
+        </div>
+        <div class="cards-grid">
+          <article class="card">
+            <h3>User focus</h3>
+            <p class="muted-text">The project documents identify a hairstylist who needs fewer scheduling interruptions and a busy customer who wants quick online booking without calling.</p>
+          </article>
+          <article class="card">
+            <h3>Design scope</h3>
+            <p class="muted-text">The planned design work includes booking and admin views, branding, and prototype review. The mobile README also defines the app as a UI prototype and functional mockup before full integration.</p>
+          </article>
+          <article class="card">
+            <h3>Prototype evidence</h3>
+            <p class="muted-text">The implemented web prototype shows the visual direction for the booking flow, the client-facing homepage, portfolio/testimonials, and admin entry points. This acts as the clearest mockup evidence included in the project folder.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">System Implementation</p>
+          <h2>Implemented stack and modules</h2>
+        </div>
+        <div class="cards-grid">
+          <article class="card">
+            <h3>Web application</h3>
+            <p class="muted-text">The web client is built with Next.js and React. The implemented pages cover the public homepage, booking flow, signup/login, user dashboard, portfolio, blog, admin login, and admin dashboard.</p>
+            <div class="tag-row"><span class="tag">Next.js</span><span class="tag">React</span><span class="tag">Tailwind</span></div>
+          </article>
+          <article class="card">
+            <h3>Backend API</h3>
+            <p class="muted-text">The backend uses Python, Django, Django REST Framework, PostgreSQL, and JWT-based authentication. The API handles services, availability calculation, appointment booking, rescheduling, cancellations, and admin analytics.</p>
+            <div class="tag-row"><span class="tag">Python</span><span class="tag">Django</span><span class="tag">DRF</span><span class="tag">PostgreSQL</span></div>
+          </article>
+          <article class="card">
+            <h3>Mobile prototype</h3>
+            <p class="muted-text">The Android project includes booking, schedule, portfolio, blog, user, and admin screens. It is documented as a UI prototype that demonstrates the intended mobile flow and visual identity.</p>
+            <div class="tag-row"><span class="tag">Android</span><span class="tag">Kotlin</span><span class="tag">UI Prototype</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section accent">
+      <div class="container cta-panel">
+        <div>
+          <p class="eyebrow">Capstone Navigation</p>
+          <h2>Continue through the rest of the portfolio.</h2>
+          <p>The detailed capstone writeup stays on this page, while the projects page also includes the mobile capstone prototype in the wider project list.</p>
+        </div>
+        <div class="cta-buttons">
+          <a class="btn primary" href="../projects/index.html">Back to Projects</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="brand-name">Lucas Tavares Criscuolo</p>
+        <p class="muted-text">Software Developer • Cybersecurity</p>
+      </div>
+      <div class="footer-links">
+        <a href="../index.html">Home</a>
+        <a href="../about/index.html">About</a>
+        <a href="../projects/index.html">Projects</a>
+        <a href="../capstone/index.html">Capstone</a>
+        <a href="../experience/index.html">Experience</a>
+      </div>
+      <div class="footer-social">
+        <a href="mailto:lucastcriscuolo@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/lucas-tavares-criscuolo-455721237">LinkedIn</a>
+        <a href="https://github.com/Stuaarts">GitHub</a>
+        <a href="https://github.com/Stuaarts/Portfolio">Repo</a>
+      </div>
+      <div class="footer-meta">
+        <p>© <span id="year"></span> Lucas Tavares Criscuolo</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

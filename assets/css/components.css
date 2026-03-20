@@ -60,7 +60,7 @@
 
 .footer-social a:hover, .footer-links a:hover { color: var(--color-primary); }
 
-.reveal { opacity: 0; transform: translateY(20px); }
+.reveal { opacity: 1; transform: none; }
 
 [data-theme="dark"] .card.muted { background: rgba(255,255,255,0.04); }
 

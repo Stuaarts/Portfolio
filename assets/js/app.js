@@ -1,7 +1,7 @@
 ﻿// assets/js/app.js
 import { initUI } from './ui.js';
 import { initAnimations } from './animations.js';
-import { renderFeaturedProjects, renderProjectsGrid, applyProjectFilters, renderExperience, renderCertifications, initContactForm } from './data.js';
+import { renderFeaturedProjects, renderProjectsGrid, applyProjectFilters, renderExperience, renderCertifications, renderAwards } from './data.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   initUI();
@@ -17,9 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (page === 'experience') {
     renderExperience();
     renderCertifications();
-  }
-  if (page === 'contact') {
-    initContactForm();
+    renderAwards();
   }
 });
 

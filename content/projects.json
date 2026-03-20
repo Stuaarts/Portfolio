@@ -11,7 +11,6 @@
       "Packaged repeatable queries to speed triage"
     ],
     "image": "/assets/img/placeholders/project-1.webp",
-    "links": { "github": "https://github.com/Stuaarts/siem-playbook", "demo": "https://example.com/siem" },
     "featured": true
   },
   {
@@ -26,7 +25,6 @@
       "Added ScrollTrigger micro-reveals gated by accessibility prefs"
     ],
     "image": "/assets/img/placeholders/project-2.webp",
-    "links": { "github": "https://github.com/Stuaarts/secure-portfolio", "demo": "https://example.com" },
     "featured": true
   },
   {
@@ -41,7 +39,6 @@
       "Recommended control hardening and monitoring"
     ],
     "image": "/assets/img/placeholders/project-3.webp",
-    "links": { "github": "https://github.com/Stuaarts/packet-lab", "demo": "https://example.com/pcap" },
     "featured": true
   },
   {
@@ -56,7 +53,6 @@
       "Versioned artifacts to ensure integrity"
     ],
     "image": "/assets/img/placeholders/project-4.webp",
-    "links": { "github": "https://github.com/Stuaarts/risk-toolkit", "demo": "https://example.com/risk" },
     "featured": false
   },
   {
@@ -71,7 +67,6 @@
       "Instrumented request logs for anomaly detection"
     ],
     "image": "/assets/img/placeholders/project-1.webp",
-    "links": { "github": "https://github.com/Stuaarts/secure-task-api", "demo": "https://example.com/task" },
     "featured": false
   },
   {

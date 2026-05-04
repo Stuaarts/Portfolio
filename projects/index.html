@@ -1,65 +1,76 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Projects | Lucas Tavares Criscuolo</title>
-  <meta name="description" content="Projects and labs across secure web, network defense, and automation.">
+  <meta name="description" content="Selected software case studies from Lucas Tavares Criscuolo.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="canonical" href="https://portfoliofinal-five-lovat.vercel.app/projects/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/components.css">
   <link rel="stylesheet" href="../assets/css/pages.css">
   <meta property="og:title" content="Projects | Lucas Tavares Criscuolo">
-  <meta property="og:description" content="Security-minded software and cybersecurity labs.">
+  <meta property="og:description" content="Selected project case studies with screenshots, highlights, and technical stack details.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://portfoliofinal-five-lovat.vercel.app/projects/">
-  <meta property="og:image" content="../assets/img/placeholders/project-3.webp">
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <meta property="og:image" content="https://portfoliofinal-five-lovat.vercel.app/assets/img/projects/stockpilot/03-dashboard.png">
   <script type="module" src="../assets/js/app.js" defer></script>
 </head>
 <body data-page="projects">
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="brand">
-      <a class="logo" href="../index.html"><span>LC</span></a>
-      <div class="brand-text">
-        <span class="brand-name">Lucas Tavares Criscuolo</span>
-        <span class="brand-role">Software Developer • Cybersecurity</span>
-      </div>
-    </div>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="nav-toggle-line"></span>
-      <span class="nav-toggle-line"></span>
-      <span class="nav-toggle-line"></span>
-    </button>
-    <nav id="site-nav" class="primary-nav" aria-label="Main navigation">
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../about/index.html">About</a></li>
-        <li><a href="../projects/index.html" class="active">Projects</a></li>
-        <li><a href="../capstone/index.html">Capstone</a></li>
-        <li><a href="../experience/index.html">Experience</a></li>
-        <li><a class="btn nav-cta" href="../assets/docs/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
-      </ul>
 
-    </nav>
+  <header class="site-header">
+    <div class="container header-shell">
+      <div class="brand">
+        <a class="logo" href="../index.html" aria-label="Home"><span>LC</span></a>
+        <div class="brand-text">
+          <span class="brand-name">Lucas Tavares Criscuolo</span>
+          <span class="brand-role">Developer / Security Analyst</span>
+        </div>
+      </div>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+      </button>
+
+      <nav id="site-nav" class="primary-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about/index.html">About</a></li>
+          <li><a href="../projects/index.html" class="active">Projects</a></li>
+          <li><a href="../experience/index.html">Experience</a></li>
+          <li><a class="btn nav-cta primary" href="../assets/docs/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main id="main">
-    <section class="section hero-sub">
-      <div class="container">
-        <p class="eyebrow">Projects</p>
-        <h1>Selected builds and labs.</h1>
-        <p class="lead">These cards represent academic and practical work across web, mobile, programming, and security-related coursework. The capstone project has its own detailed page, and the mobile capstone prototype is also included in this grid.</p>
-        <div class="hero-actions">
-          <a class="btn primary" href="../capstone/index.html">View Capstone</a>
+    <section class="page-hero" data-animate="hero">
+      <div class="container page-hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Projects</p>
+          <h1 class="hero-title">Case studies with real product footage and clearer technical framing.</h1>
+          <p class="lead">This section now focuses on stronger portfolio material instead of a course-project list. Each case study includes the stack, core implementation highlights, and the screenshots or media available for that project.</p>
         </div>
+
+        <aside class="card reveal">
+          <p class="eyebrow">Case Study Format</p>
+          <h3>What is included in each project card</h3>
+          <ul class="list-plain">
+            <li>Primary screenshot or visual entry point</li>
+            <li>Short technical summary and stack tags</li>
+            <li>Detailed modal with highlights and gallery</li>
+            <li>Links only when a live demo, repository, or video is available</li>
+          </ul>
+        </aside>
       </div>
     </section>
 
@@ -68,13 +79,13 @@
         <div class="filters">
           <div class="filter-buttons" role="group" aria-label="Project filters">
             <button class="chip active" data-filter="All">All</button>
-            <button class="chip" data-filter="Web">Web</button>
-            <button class="chip" data-filter="Mobile">Mobile</button>
-            <button class="chip" data-filter="Security">Security</button>
+            <button class="chip" data-filter="Full-Stack">Full-Stack</button>
+            <button class="chip" data-filter="Client App">Client App</button>
           </div>
+
           <label class="search-field">
             <span class="sr-only">Search projects</span>
-            <input id="project-search" type="search" placeholder="Search by title or tag" aria-label="Search projects">
+            <input id="project-search" type="search" placeholder="Search by project or stack" aria-label="Search projects">
           </label>
         </div>
 
@@ -86,37 +97,66 @@
   <div id="project-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
     <div class="modal-backdrop" data-modal-close></div>
     <div class="modal-dialog" role="document">
-      <button class="modal-close" data-modal-close aria-label="Close modal">×</button>
-      <h3 id="modal-title"></h3>
-      <p id="modal-summary" class="muted-text"></p>
-      <ul id="modal-highlights" class="list-check"></ul>
+      <button class="modal-close" data-modal-close aria-label="Close modal">&times;</button>
+
+      <div class="modal-layout">
+        <div class="modal-main">
+          <p id="modal-kicker" class="eyebrow"></p>
+          <h2 id="modal-title"></h2>
+          <p id="modal-subtitle" class="project-subtitle"></p>
+          <p id="modal-summary" class="lead"></p>
+          <figure class="modal-figure">
+            <img id="modal-image" src="" alt="">
+          </figure>
+          <div id="modal-gallery" class="gallery-strip"></div>
+        </div>
+
+        <aside class="modal-side">
+          <div class="info-card">
+            <h3>Highlights</h3>
+            <ul id="modal-highlights" class="list-check"></ul>
+          </div>
+
+          <div class="info-card">
+            <h3>Stack</h3>
+            <div id="modal-tags" class="tag-row"></div>
+          </div>
+
+          <div id="modal-links" class="modal-links"></div>
+
+          <div id="modal-credentials-wrap" class="info-card" hidden>
+            <h3>Demo access</h3>
+            <ul id="modal-credentials" class="list-plain"></ul>
+          </div>
+
+          <p id="modal-note" class="modal-note" hidden></p>
+        </aside>
+      </div>
     </div>
   </div>
 
   <footer class="site-footer">
-    <div class="container footer-grid">
+    <div class="container footer-shell">
       <div>
         <p class="brand-name">Lucas Tavares Criscuolo</p>
-        <p class="muted-text">Software Developer • Cybersecurity</p>
+        <p class="footer-note">Developer / Security Analyst</p>
       </div>
       <div class="footer-links">
         <a href="../index.html">Home</a>
         <a href="../about/index.html">About</a>
         <a href="../projects/index.html">Projects</a>
-        <a href="../capstone/index.html">Capstone</a>
         <a href="../experience/index.html">Experience</a>
       </div>
       <div class="footer-social">
-        <a href="mailto:lucastcriscuolo@gmail.com">Email</a>
-        <a href="https://www.linkedin.com/in/lucas-tavares-criscuolo-455721237">LinkedIn</a>
-        <a href="https://github.com/Stuaarts">GitHub</a>
-        <a href="https://github.com/Stuaarts/Portfolio">Repo</a>
+        <a href="mailto:lucastcriscuolo@gmail.com">lucastcriscuolo@gmail.com</a>
+        <a href="https://www.linkedin.com/in/lucas-tavares-criscuolo-455721237" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/Stuaarts" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://github.com/Stuaarts/Portfolio" target="_blank" rel="noopener noreferrer">Portfolio Repo</a>
       </div>
-      <div class="footer-meta">
-        <p>© <span id="year"></span> Lucas Tavares Criscuolo</p>
-      </div>
+    </div>
+    <div class="container">
+      <p class="footer-note">&copy; <span id="year"></span> Lucas Tavares Criscuolo</p>
     </div>
   </footer>
 </body>
 </html>
-

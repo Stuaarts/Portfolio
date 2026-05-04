@@ -1,198 +1,229 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>About | Lucas Tavares Criscuolo</title>
-  <meta name="description" content="About Lucas Tavares Criscuolo — security-focused software developer in Toronto.">
+  <meta name="description" content="Background, technical focus, and public portfolio documents for Lucas Tavares Criscuolo.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="canonical" href="https://portfoliofinal-five-lovat.vercel.app/about/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/components.css">
   <link rel="stylesheet" href="../assets/css/pages.css">
   <meta property="og:title" content="About | Lucas Tavares Criscuolo">
-  <meta property="og:description" content="Security-focused software developer blending full-stack skills with cybersecurity.">
+  <meta property="og:description" content="Graduate software portfolio background, public documents, and technical focus areas.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://portfoliofinal-five-lovat.vercel.app/about/">
-  <meta property="og:image" content="../assets/img/placeholders/project-2.webp">
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <meta property="og:image" content="https://portfoliofinal-five-lovat.vercel.app/assets/img/photo.webp">
   <script type="module" src="../assets/js/app.js" defer></script>
 </head>
 <body data-page="about">
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="brand">
-      <a class="logo" href="../index.html" aria-label="Home"><span>LC</span></a>
-      <div class="brand-text">
-        <span class="brand-name">Lucas Tavares Criscuolo</span>
-        <span class="brand-role">Software Developer • Cybersecurity</span>
-      </div>
-    </div>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="nav-toggle-line"></span>
-      <span class="nav-toggle-line"></span>
-      <span class="nav-toggle-line"></span>
-    </button>
-    <nav id="site-nav" class="primary-nav" aria-label="Main navigation">
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../about/index.html" class="active">About</a></li>
-        <li><a href="../projects/index.html">Projects</a></li>
-        <li><a href="../capstone/index.html">Capstone</a></li>
-        <li><a href="../experience/index.html">Experience</a></li>
-        <li><a class="btn nav-cta" href="../assets/docs/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
-      </ul>
 
-    </nav>
+  <header class="site-header">
+    <div class="container header-shell">
+      <div class="brand">
+        <a class="logo" href="../index.html" aria-label="Home"><span>LC</span></a>
+        <div class="brand-text">
+          <span class="brand-name">Lucas Tavares Criscuolo</span>
+          <span class="brand-role">Developer / Security Analyst</span>
+        </div>
+      </div>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+      </button>
+
+      <nav id="site-nav" class="primary-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about/index.html" class="active">About</a></li>
+          <li><a href="../projects/index.html">Projects</a></li>
+          <li><a href="../experience/index.html">Experience</a></li>
+          <li><a class="btn nav-cta primary" href="../assets/docs/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main id="main">
-    <section class="section hero-sub">
-      <div class="container narrow">
-        <p class="eyebrow">About</p>
-        <h1>Practical builder with a security-first lens.</h1>
-        <p class="lead">Balancing code quality, usability, and defensive depth. I value clear communication, thoughtful defaults, and disciplined execution.</p>
+    <section class="page-hero" data-animate="hero">
+      <div class="container page-hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">About</p>
+          <h1 class="hero-title">Graduate profile shaped by software coursework and practical teamwork.</h1>
+          <p class="lead">I completed George Brown College&rsquo;s Computer Programming &amp; Analysis advanced diploma in April 2026. The program gave me project experience across full-stack development, data structures, systems analysis, Agile development, database work, machine learning, and mobile development.</p>
+          <p class="lead">Alongside that, working at Oliver &amp; Bonacini Hospitality strengthened communication, reliability, and adaptability in busy team environments. Those habits carry directly into how I approach software work.</p>
+        </div>
+
+        <aside class="hero-photo-card reveal">
+          <img src="../assets/img/photo.webp" alt="Portrait of Lucas Tavares Criscuolo" width="900" height="1200" loading="eager">
+          <div class="hero-photo-meta">
+            <div>
+              <p class="eyebrow">Profile</p>
+              <h3>Developer / Security Analyst</h3>
+            </div>
+            <ul class="hero-fact-list">
+              <li><span>Education</span><strong>Completed April 2026</strong></li>
+              <li><span>Program</span><strong>Computer Programming &amp; Analysis</strong></li>
+              <li><span>GPA</span><strong>3.53</strong></li>
+              <li><span>Base</span><strong>Toronto, ON</strong></li>
+            </ul>
+          </div>
+        </aside>
       </div>
     </section>
 
     <section class="section">
-      <div class="container split">
-        <div>
-          <h2>Bio</h2>
-          <p>Based in North York, Toronto, I’m completing an Advanced Diploma in Computer Programming & Analysis (GPA 3.53) at George Brown College. I enjoy shipping polished interfaces, building reliable APIs, and keeping an eye on security and performance from the start.</p>
-          <p>Hands-on labs—incident reports, packet analysis, and risk reviews—keep my security skills sharp. My hospitality background means I stay calm in busy environments and communicate clearly with teams and stakeholders.</p>
-        </div>
-        <div class="info-card">
-          <h3>Snapshot</h3>
-          <ul class="list-plain">
-            <li><strong>Location:</strong> Toronto (North York), ON</li>
-            <li><strong>Focus:</strong> Front-end experience, secure web, observability</li>
-            <li><strong>Currently:</strong> Final year of Advanced Diploma (GPA 3.53)</li>
-            <li><strong>Learning:</strong> Azure, modern JS, SIEM workflows</li>
-            <li><strong>Certifications:</strong> Google Cybersecurity courses (Foundations, Risk, Networks)</li>
-          </ul>
-        </div>
+      <div class="container split-grid">
+        <article class="card reveal story-card">
+          <p class="eyebrow">Background</p>
+          <h2>How the portfolio is grounded.</h2>
+          <p>The work shown here comes from the transition out of college and into a more focused software portfolio. The strongest parts of my training are full-stack development, structured problem solving, and the ability to learn new tools through projects and coursework.</p>
+          <p>My resume also reflects a current hospitality role that taught me how to stay organized, handle pressure, and communicate clearly with other people doing fast-moving work. That is a useful base for engineering teams too.</p>
+        </article>
+
+        <article class="card reveal story-card">
+          <p class="eyebrow">Direction</p>
+          <h2>What I am aiming for next.</h2>
+          <p>I am looking for software development work where I can keep growing in full-stack delivery while continuing to use the security foundations I built through coursework and the Google Cybersecurity Certificate.</p>
+          <p>The kind of role that fits me best is one with real product work, clear collaboration, and room to improve through code reviews, iteration, and hands-on responsibility.</p>
+        </article>
       </div>
     </section>
 
-    <section class="section muted">
+    <section class="section alt">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">Skills</p>
-          <h2>Strengths by domain</h2>
+          <p class="eyebrow">Technical Focus</p>
+          <h2>Skills grouped by the work they support.</h2>
         </div>
-        <div class="skill-groups">
-          <div class="skill-group">
-            <h3>Languages</h3>
-            <div class="tag-row"><span class="tag">JavaScript</span><span class="tag">C#</span><span class="tag">SQL</span><span class="tag">Python (basic)</span><span class="tag">HTML/CSS</span></div>
-          </div>
-          <div class="skill-group">
-            <h3>Security</h3>
-            <div class="tag-row"><span class="tag">NIST CSF</span><span class="tag">Log analysis</span><span class="tag">SIEM (theory)</span><span class="tag">Wireshark</span><span class="tag">tcpdump</span><span class="tag">Incident response</span></div>
-          </div>
-          <div class="skill-group">
-            <h3>Frameworks & Tools</h3>
-            <div class="tag-row"><span class="tag">ASP.NET Core MVC</span><span class="tag">Azure</span><span class="tag">Git</span><span class="tag">AJAX</span></div>
-          </div>
-          <div class="skill-group">
-            <h3>Ways of Working</h3>
-            <div class="tag-row"><span class="tag">Documentation</span><span class="tag">Pairing</span><span class="tag">Incident comms</span><span class="tag">Retros</span></div>
-          </div>
+
+        <div class="pillars-grid">
+          <article class="card reveal">
+            <p class="eyebrow">Programming</p>
+            <h3>Languages and frameworks</h3>
+            <div class="tag-row">
+              <span class="tag">Python</span>
+              <span class="tag">Java</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">C#</span>
+              <span class="tag">ASP.NET</span>
+              <span class="tag">HTML / CSS</span>
+            </div>
+          </article>
+          <article class="card reveal">
+            <p class="eyebrow">Data</p>
+            <h3>Database and cloud tools</h3>
+            <div class="tag-row">
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">MariaDB</span>
+              <span class="tag">Oracle</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">Azure</span>
+            </div>
+          </article>
+          <article class="card reveal">
+            <p class="eyebrow">Security</p>
+            <h3>Foundations and lab tools</h3>
+            <div class="tag-row">
+              <span class="tag">Wireshark</span>
+              <span class="tag">tcpdump</span>
+              <span class="tag">Cryptography</span>
+              <span class="tag">Network Security</span>
+              <span class="tag">Linux</span>
+              <span class="tag">SQL Auditing</span>
+            </div>
+          </article>
+          <article class="card reveal">
+            <p class="eyebrow">Delivery</p>
+            <h3>Workflow and tooling</h3>
+            <div class="tag-row">
+              <span class="tag">Git</span>
+              <span class="tag">Jenkins</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Agile Development</span>
+              <span class="tag">Systems Analysis</span>
+              <span class="tag">OOP</span>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="container split">
-        <div>
-          <h2>Career Goal</h2>
-          <p>I want to start my career in an entry-level software development role where I can keep growing in full-stack delivery and continue building on the security knowledge I developed through coursework and the Google Cybersecurity Certificate program. The kind of work that fits me best is practical work that solves real problems, improves how people use software, and values collaboration, mentorship, and steady learning.</p>
-          <p>My academic projects and fast-paced client-facing work taught me to stay calm, communicate clearly, and keep moving when things get busy. I want to be the kind of developer who brings reliable delivery, clean communication, and a security-aware mindset to the team while continuing to improve through real projects.</p>
-        </div>
-        <div class="info-card">
-          <h3>What I am building toward</h3>
-          <ul class="list-plain">
-            <li>Entry-level software development work with room to grow in full-stack delivery</li>
-            <li>Projects that value collaboration, mentorship, and continuous learning</li>
-            <li>Opportunities where security awareness improves product quality and trust</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section muted">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">Cover Letters</p>
-          <h2>Sample letters for target roles</h2>
-          <p class="lead">These samples reflect the two role directions shown throughout this portfolio: software development and cybersecurity.</p>
+          <p class="eyebrow">Documents</p>
+          <h2>Public portfolio documents and profiles.</h2>
+          <p class="lead">Only the public files used by the portfolio are kept in the deployed site. The original reference folder is not required for hosting.</p>
         </div>
-        <div class="cards-grid">
-          <article class="card">
-            <p class="eyebrow">Sample 1</p>
+
+        <div class="documents-grid">
+          <article class="card resource-card reveal">
+            <p class="eyebrow">Resume</p>
+            <h3>Current 2026 resume</h3>
+            <p class="muted-text">Updated resume PDF used throughout the site.</p>
+            <a class="btn primary" href="../assets/docs/resume.pdf" target="_blank" rel="noopener noreferrer">Open Resume</a>
+          </article>
+          <article class="card resource-card reveal">
+            <p class="eyebrow">Cover Letter</p>
             <h3>Entry-Level Software Developer</h3>
-            <p class="muted-text">Highlights coursework in full-stack web development, object-oriented programming, database design, and tools including C#, JavaScript, HTML/CSS, SQL, and Git.</p>
-            <a class="btn outline" href="../assets/docs/coverletters/entry-level-software-developer.pdf" target="_blank" rel="noopener noreferrer">Open Cover Letter</a>
+            <p class="muted-text">Sample letter aligned with software development applications.</p>
+            <a class="btn outline" href="../assets/docs/coverletters/entry-level-software-developer.pdf" target="_blank" rel="noopener noreferrer">Open Letter</a>
           </article>
-          <article class="card">
-            <p class="eyebrow">Sample 2</p>
+          <article class="card resource-card reveal">
+            <p class="eyebrow">Cover Letter</p>
             <h3>Cyber Security Analyst Co-op</h3>
-            <p class="muted-text">Highlights Google Cybersecurity Certificate work, tcpdump and Wireshark analysis, NIST CSF incident reporting, Linux, SQL, and security-focused problem solving.</p>
-            <a class="btn outline" href="../assets/docs/coverletters/cybersecurity-analyst-coop.pdf" target="_blank" rel="noopener noreferrer">Open Cover Letter</a>
+            <p class="muted-text">Sample letter aligned with security-focused applications.</p>
+            <a class="btn outline" href="../assets/docs/coverletters/cybersecurity-analyst-coop.pdf" target="_blank" rel="noopener noreferrer">Open Letter</a>
           </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container split">
-        <div>
-          <h2>Professional Approach</h2>
-          <ul class="values-list">
-            <li><strong>Clarity:</strong> direct communication and next steps over jargon.</li>
-            <li><strong>Reliability:</strong> predictable delivery, documented choices, and visible status.</li>
-            <li><strong>Secure by default:</strong> sane inputs, least privilege, and meaningful logs.</li>
-            <li><strong>Learning:</strong> steady improvement through labs, feedback, and retros.</li>
-          </ul>
-        </div>
-        <div class="info-card">
-          <h3>Resume</h3>
-          <p>Open the current 2026 resume PDF.</p>
-          <a class="btn primary" href="../assets/docs/resume.pdf" target="_blank" rel="noopener noreferrer">View Resume (PDF)</a>
+          <article class="card resource-card reveal">
+            <p class="eyebrow">Profile</p>
+            <h3>GitHub</h3>
+            <p class="muted-text">Public repositories and portfolio source.</p>
+            <a class="btn ghost" href="https://github.com/Stuaarts" target="_blank" rel="noopener noreferrer">Open GitHub</a>
+          </article>
+          <article class="card resource-card reveal">
+            <p class="eyebrow">Profile</p>
+            <h3>LinkedIn</h3>
+            <p class="muted-text">Professional profile and resume-aligned background.</p>
+            <a class="btn ghost" href="https://www.linkedin.com/in/lucas-tavares-criscuolo-455721237" target="_blank" rel="noopener noreferrer">Open LinkedIn</a>
+          </article>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-grid">
+    <div class="container footer-shell">
       <div>
         <p class="brand-name">Lucas Tavares Criscuolo</p>
-        <p class="muted-text">Software Developer • Cybersecurity</p>
+        <p class="footer-note">Developer / Security Analyst</p>
       </div>
       <div class="footer-links">
         <a href="../index.html">Home</a>
         <a href="../about/index.html">About</a>
         <a href="../projects/index.html">Projects</a>
-        <a href="../capstone/index.html">Capstone</a>
         <a href="../experience/index.html">Experience</a>
       </div>
       <div class="footer-social">
-        <a href="mailto:lucastcriscuolo@gmail.com">Email</a>
-        <a href="https://www.linkedin.com/in/lucas-tavares-criscuolo-455721237">LinkedIn</a>
-        <a href="https://github.com/Stuaarts">GitHub</a>
-        <a href="https://github.com/Stuaarts/Portfolio">Repo</a>
+        <a href="mailto:lucastcriscuolo@gmail.com">lucastcriscuolo@gmail.com</a>
+        <a href="https://www.linkedin.com/in/lucas-tavares-criscuolo-455721237" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/Stuaarts" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://github.com/Stuaarts/Portfolio" target="_blank" rel="noopener noreferrer">Portfolio Repo</a>
       </div>
-      <div class="footer-meta">
-        <p>© <span id="year"></span> Lucas Tavares Criscuolo</p>
-      </div>
+    </div>
+    <div class="container">
+      <p class="footer-note">&copy; <span id="year"></span> Lucas Tavares Criscuolo</p>
     </div>
   </footer>
 </body>
 </html>
-

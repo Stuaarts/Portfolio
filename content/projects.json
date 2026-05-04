@@ -1,87 +1,67 @@
-﻿[
+[
   {
-    "title": "SIEM Log Monitoring Playbook",
-    "slug": "siem-log-monitoring",
-    "category": "Security",
-    "tags": ["SIEM", "Detection", "NIST CSF"],
-    "summary": "Built reusable workflows to parse system/network logs, flag anomalies, and map findings to NIST CSF functions.",
+    "title": "StockPilot - Smart Inventory Management System",
+    "slug": "stockpilot",
+    "category": "Full-Stack",
+    "year": "2026",
+    "subtitle": "ASP.NET Core MVC inventory management platform with PostgreSQL, role-based access, stock tracking, dashboard analytics, and Render deployment.",
+    "summary": "Full-stack inventory management web application for small business operations with products, categories, suppliers, stock tracking, orders, user roles, and dashboard metrics.",
+    "description": "StockPilot was built as a full-stack inventory management system focused on practical business workflows. The application supports product and supplier management, dashboard analytics, low-stock monitoring, stock movement history, order workflows, role-based access, and deployed demo access backed by PostgreSQL.",
+    "tags": ["ASP.NET Core MVC", "C#", "PostgreSQL", "EF Core", "Identity", "Bootstrap", "Docker", "Render"],
     "highlights": [
-      "Parsed auth and network logs to identify brute-force patterns and unusual geos",
-      "Documented response steps with containment and recovery guidance",
-      "Packaged repeatable queries to speed triage"
+      "Built role-based authentication and authorization with ASP.NET Core Identity for Admin, Manager, and Staff workflows.",
+      "Designed PostgreSQL data models and EF Core relationships for products, categories, suppliers, orders, order items, stock movements, and audit logs.",
+      "Implemented product search, category and supplier filters, stock status filters, sorting, and pagination.",
+      "Added dashboard metrics for inventory value, potential revenue, low-stock items, out-of-stock items, recent movements, and recent orders.",
+      "Implemented stock movement tracking so inventory changes are recorded instead of only updating final quantity.",
+      "Deployed the application on Render with PostgreSQL and documented the project with screenshots, demo accounts, and setup steps."
     ],
-    "image": "/assets/img/placeholders/project-1.webp",
+    "image": "/assets/img/projects/stockpilot/03-dashboard.png",
+    "gallery": [
+      "/assets/img/projects/stockpilot/03-dashboard.png",
+      "/assets/img/projects/stockpilot/04-products.png",
+      "/assets/img/projects/stockpilot/05-low-stock-alerts.png",
+      "/assets/img/projects/stockpilot/07-stock-movements.png",
+      "/assets/img/projects/stockpilot/08-admin-users.png",
+      "/assets/img/projects/stockpilot/09-mobile-dashboard.png"
+    ],
+    "links": {
+      "demo": "https://stockpilot-dtnp.onrender.com",
+      "github": "https://github.com/Stuaarts/Smart-Inventory-Management-System",
+      "video": "/assets/media/projects/stockpilot-demo.webm"
+    },
+    "credentials": [
+      { "label": "Admin", "value": "admin@demo.com / Demo123!" },
+      { "label": "Manager", "value": "manager@demo.com / Demo123!" },
+      { "label": "Staff", "value": "staff@demo.com / Demo123!" }
+    ],
+    "note": "The Render PostgreSQL demo database is on a free plan and may expire or reset over time.",
     "featured": true
   },
   {
-    "title": "Secure Portfolio Frontend",
-    "slug": "secure-portfolio",
-    "category": "Web",
-    "tags": ["JavaScript", "Accessibility", "CSP"],
-    "summary": "Static portfolio with hardened headers, GSAP motion with reduced-motion respect, and data-driven content.",
+    "title": "Hair Stylist Booking Web Application",
+    "slug": "hair-stylist-booking",
+    "category": "Client App",
+    "year": "2026",
+    "subtitle": "Booking, portfolio, testimonial, admin, and mobile-ready product direction for a Toronto hairstylist business.",
+    "summary": "Team-built booking platform for a hairstylist business with client scheduling, digital portfolio support, admin workflows, and matching web and mobile product planning.",
+    "description": "This project was created to improve how a hairstylist manages appointments, availability, and digital presence. The product direction combines client booking, account-based scheduling, admin workflow support, portfolio and testimonial presentation, and a matching mobile experience for the broader service flow.",
+    "tags": ["Next.js", "React", "Django", "DRF", "PostgreSQL", "Kotlin", "Client Workflow"],
     "highlights": [
-      "Implemented CSP, frame protections, and referrer policy",
-      "Built themeable design system with CSS variables",
-      "Added ScrollTrigger micro-reveals gated by accessibility prefs"
+      "Planned and implemented a booking system focused on available time slots, rescheduling, and cancellation support.",
+      "Included admin workflow support for schedule management, appointment updates, and customer records.",
+      "Designed the product around both customer booking needs and a hairstylist workflow that reduces manual coordination.",
+      "Covered portfolio and testimonial presentation so the product also supports digital presence beyond scheduling.",
+      "Extended the product direction across web, backend API, and mobile prototype work."
     ],
-    "image": "/assets/img/placeholders/project-2.webp",
+    "image": "/assets/img/projects/hair-stylist/home.png",
+    "gallery": [
+      "/assets/img/projects/hair-stylist/home.png",
+      "/assets/img/projects/hair-stylist/portfolio.png"
+    ],
+    "links": {},
+    "credentials": [],
+    "note": "This project is shown as portfolio case study material rather than a public demo.",
     "featured": true
-  },
-  {
-    "title": "Packet Analysis Lab",
-    "slug": "packet-analysis-lab",
-    "category": "Security",
-    "tags": ["Wireshark", "tcpdump", "DNS"],
-    "summary": "Analyzed PCAPs to surface DNS tunneling, SYN floods, and ICMP anomalies with clear incident writeups.",
-    "highlights": [
-      "Created incident reports mapping to Identify/Protect/Detect/Respond/Recover",
-      "Captured packet evidence and visualized flows",
-      "Recommended control hardening and monitoring"
-    ],
-    "image": "/assets/img/placeholders/project-3.webp",
-    "featured": true
-  },
-  {
-    "title": "Risk Assessment Toolkit",
-    "slug": "risk-assessment-toolkit",
-    "category": "Security",
-    "tags": ["Risk", "NIST CSF", "Reporting"],
-    "summary": "Lightweight templates to score risks, propose controls, and track remediation for simulated orgs.",
-    "highlights": [
-      "Mapped findings to NIST CSF outcomes",
-      "Produced exec-friendly summaries and backlog items",
-      "Versioned artifacts to ensure integrity"
-    ],
-    "image": "/assets/img/placeholders/project-4.webp",
-    "featured": false
-  },
-  {
-    "title": "Full-Stack Task API (Secure Defaults)",
-    "slug": "secure-task-api",
-    "category": "Web",
-    "tags": ["C#", "ASP.NET", "API Security"],
-    "summary": "Proof-of-concept task API with input validation, structured logging, and role-based access controls.",
-    "highlights": [
-      "Implemented JWT auth and role gates",
-      "Added validation filters to reduce injection risk",
-      "Instrumented request logs for anomaly detection"
-    ],
-    "image": "/assets/img/placeholders/project-1.webp",
-    "featured": false
-  },
-  {
-    "title": "Hair Stylist Booking Mobile Prototype",
-    "slug": "hair-stylist-booking-mobile",
-    "category": "Mobile",
-    "tags": ["Android", "Kotlin", "Capstone"],
-    "summary": "Mobile capstone prototype for the hairstylist booking project with booking, profile, portfolio, blog, and admin-related flows.",
-    "highlights": [
-      "Built as a UI prototype for a web and mobile hairstylist booking application",
-      "Covers booking, booking history, saved preferences, portfolio, and blog-related screens",
-      "Includes user and admin flows to support the broader capstone product direction"
-    ],
-    "image": "/assets/img/placeholders/project-4.webp",
-    "featured": false
   }
 ]
-

@@ -2,9 +2,9 @@
   position: sticky;
   top: 0;
   z-index: 900;
-  border-bottom: 1px solid rgba(23, 24, 28, 0.08);
+  border-bottom: 1px solid var(--color-line);
   backdrop-filter: blur(18px);
-  background: rgba(243, 238, 228, 0.72);
+  background: var(--color-header-bg);
 }
 
 .header-shell {
@@ -72,8 +72,8 @@
 
 .primary-nav a.active,
 .primary-nav a:hover {
-  background: rgba(255, 255, 255, 0.72);
-  color: var(--color-brand-strong);
+  background: var(--color-nav-bg);
+  color: var(--color-brand);
 }
 
 .nav-toggle {
@@ -84,8 +84,8 @@
   height: 3rem;
   padding: 0;
   border-radius: 1rem;
-  border: 1px solid rgba(23, 24, 28, 0.08);
-  background: rgba(255, 255, 255, 0.68);
+  border: 1px solid var(--color-line);
+  background: var(--color-button-surface);
   cursor: pointer;
 }
 
@@ -191,9 +191,9 @@
   grid-template-columns: 1.1fr 0.8fr 0.8fr;
   gap: 1.25rem;
   padding: var(--space-8);
-  border: 1px solid rgba(23, 24, 28, 0.08);
+  border: 1px solid var(--color-line);
   border-radius: var(--radius-lg);
-  background: rgba(255, 251, 244, 0.76);
+  background: var(--color-surface-soft);
   box-shadow: var(--shadow-sm);
 }
 
@@ -211,7 +211,7 @@
 
 .footer-links a:hover,
 .footer-social a:hover {
-  color: var(--color-brand-strong);
+  color: var(--color-brand);
 }
 
 @media (max-width: 980px) {
@@ -233,9 +233,9 @@
     inset: 5rem 1rem auto 1rem;
     transform: translateY(-120%);
     transition: transform var(--transition-med);
-    border: 1px solid rgba(23, 24, 28, 0.08);
+    border: 1px solid var(--color-line);
     border-radius: 1.5rem;
-    background: rgba(255, 250, 243, 0.95);
+    background: var(--color-surface-strong);
     box-shadow: var(--shadow-md);
     padding: 1rem;
   }

@@ -9,7 +9,21 @@ export function initUI() {
 }
 
 function setTheme() {
-  document.documentElement.dataset.theme = 'light';
+  const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+  const applyTheme = event => {
+    const prefersDark = typeof event?.matches === 'boolean' ? event.matches : mediaQuery.matches;
+    document.documentElement.dataset.theme = prefersDark ? 'dark' : 'light';
+  };
+
+  applyTheme(mediaQuery);
+
+  if (typeof mediaQuery.addEventListener === 'function') {
+    mediaQuery.addEventListener('change', applyTheme);
+    return;
+  }
+
+  mediaQuery.addListener(applyTheme);
 }
 
 function initNav() {
@@ -97,8 +111,13 @@ function trapFocus() {
 
 export function bindProjectCards() {
   document.querySelectorAll('[data-project-card]').forEach(card => {
-    card.addEventListener('click', () => openProjectModal(card.dataset.slug));
+    card.addEventListener('click', event => {
+      if (event.target.closest('a, button')) return;
+      openProjectModal(card.dataset.slug);
+    });
+
     card.addEventListener('keydown', event => {
+      if (event.target.closest('a, button')) return;
       if (event.key === 'Enter' || event.key === ' ') {
         event.preventDefault();
         openProjectModal(card.dataset.slug);

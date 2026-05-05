@@ -68,6 +68,7 @@ function featureTemplate(project) {
         <p class="project-subtitle">${project.subtitle}</p>
         <p class="muted-text">${project.summary}</p>
         <div class="tag-row">${renderTags(project.tags)}</div>
+        ${renderCardLinks(project)}
         <span class="project-link-hint">Open case study</span>
       </div>
     </article>`;
@@ -88,6 +89,7 @@ function gridTemplate(project) {
         <p class="project-subtitle">${project.subtitle}</p>
         <p class="muted-text">${project.summary}</p>
         <div class="tag-row">${renderTags(project.tags)}</div>
+        ${renderCardLinks(project)}
         <span class="project-link-hint">Open case study</span>
       </div>
     </article>`;
@@ -95,6 +97,15 @@ function gridTemplate(project) {
 
 function renderTags(tags = []) {
   return tags.map(tag => `<span class="tag">${tag}</span>`).join('');
+}
+
+function renderCardLinks(project) {
+  if (!project.links?.demo) return '';
+
+  return `
+    <div class="project-card-links">
+      <a class="project-card-link" href="${project.links.demo}" target="_blank" rel="noopener noreferrer">Website</a>
+    </div>`;
 }
 
 export function applyProjectFilters() {
@@ -155,7 +166,7 @@ export async function openProjectModal(slug) {
   const links = modal.querySelector('#modal-links');
   const linkButtons = [];
   if (project.links?.demo) {
-    linkButtons.push(`<a class="btn primary" href="${project.links.demo}" target="_blank" rel="noopener noreferrer">Live Demo</a>`);
+    linkButtons.push(`<a class="btn primary" href="${project.links.demo}" target="_blank" rel="noopener noreferrer">Website</a>`);
   }
   if (project.links?.github) {
     linkButtons.push(`<a class="btn outline" href="${project.links.github}" target="_blank" rel="noopener noreferrer">GitHub</a>`);

@@ -35,6 +35,17 @@
   min-height: 2.75rem;
 }
 
+.text-scramble {
+  white-space: pre-wrap;
+  transition: color var(--transition-fast), text-shadow var(--transition-fast), opacity var(--transition-fast);
+}
+
+.text-scramble.is-scrambling {
+  opacity: 0.96;
+  color: var(--color-highlight);
+  text-shadow: 0 0 24px var(--color-accent-soft);
+}
+
 .card,
 .panel,
 .info-card,

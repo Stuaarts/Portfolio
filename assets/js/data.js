@@ -21,14 +21,14 @@ async function fetchJSON(paths, fallback = []) {
 
 export async function loadProjects() {
   if (projectCache) return projectCache;
-  projectCache = await fetchJSON(['content/projects.json', '../content/projects.json', '/content/projects.json'], []);
+  projectCache = await fetchJSON(['/content/projects.json', 'content/projects.json', '../content/projects.json'], []);
   return projectCache;
 }
 
 export async function loadExperience() {
   if (experienceCache) return experienceCache;
   experienceCache = await fetchJSON(
-    ['content/experience.json', '../content/experience.json', '/content/experience.json'],
+    ['/content/experience.json', 'content/experience.json', '../content/experience.json'],
     { experience: [], certifications: [], awards: [] }
   );
   return experienceCache;

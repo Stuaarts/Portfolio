@@ -231,8 +231,11 @@
   .primary-nav {
     position: fixed;
     inset: 5rem 1rem auto 1rem;
-    transform: translateY(-120%);
-    transition: transform var(--transition-med);
+    transform: translateY(-1rem) scale(0.98);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: transform var(--transition-med), opacity var(--transition-med), visibility var(--transition-med);
     border: 1px solid var(--color-line);
     border-radius: 1.5rem;
     background: var(--color-surface-strong);
@@ -242,6 +245,9 @@
 
   .primary-nav.open {
     transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
   }
 
   .primary-nav ul {

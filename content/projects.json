@@ -1,5 +1,44 @@
 [
   {
+    "title": "VenueOps - Event Operations Platform",
+    "slug": "venueops",
+    "category": "Full-Stack",
+    "year": "2026",
+    "subtitle": "ASP.NET Core 8, React, and PostgreSQL platform for venue bookings, staff assignments, guest counts, shift notes, and role-based dashboards.",
+    "summary": "Production-style event operations application inspired by real hospitality workflows, with authentication, staffing, booking management, demo data, Docker setup, CI, and Render deployment.",
+    "description": "VenueOps is a full-stack event operations platform built to show how software can support real venue and hospitality workflows. The application covers venue bookings, client and room management, staff assignments, guest counts, shift notes, role-aware dashboards, demo accounts, public documentation, Docker Compose local setup, and a live Render deployment.",
+    "tags": ["ASP.NET Core 8", "C#", "React", "TypeScript", "Vite", "PostgreSQL", "EF Core", "Docker", "GitHub Actions", "Render"],
+    "highlights": [
+      "Designed a relational data model for users, clients, venue rooms, event bookings, staff assignments, and shift notes.",
+      "Implemented JWT authentication with BCrypt password hashing and role-based access for Admin, Manager, Staff, and Demo users.",
+      "Built responsive React workflows for booking CRUD, staffing, status updates, dashboard metrics, and shift note capture.",
+      "Added automated backend and frontend tests plus GitHub Actions CI for build, test, and Docker image validation.",
+      "Published a live demo with seeded demo data, Docker Compose local setup, architecture documentation, and public project assets."
+    ],
+    "image": "/assets/img/projects/venueops/01-dashboard-overview.png",
+    "gallery": [
+      "/assets/img/projects/venueops/01-dashboard-overview.png",
+      "/assets/img/projects/venueops/02-booking-flow.png",
+      "/assets/img/projects/venueops/03-staff-assignment.png",
+      "/assets/img/projects/venueops/04-shift-notes.png",
+      "/assets/img/projects/venueops/05-architecture-diagram.png",
+      "/assets/img/projects/venueops/06-mobile-dashboard.png"
+    ],
+    "links": {
+      "demo": "https://venueops-web.onrender.com/",
+      "github": "https://github.com/Stuaarts/VenueOps-",
+      "video": "/assets/media/projects/venueops-demo-60s.mp4"
+    },
+    "credentials": [
+      { "label": "Admin", "value": "admin@venueops.local / VenueOpsDemo!2026" },
+      { "label": "Manager", "value": "manager@venueops.local / VenueOpsDemo!2026" },
+      { "label": "Staff", "value": "sam.staff@venueops.local / VenueOpsDemo!2026" },
+      { "label": "Demo", "value": "demo@venueops.local / VenueOpsDemo!2026" }
+    ],
+    "note": "The public demo uses seeded demo data on Render. The project documentation describes local Docker Compose as the strongest guaranteed demo path.",
+    "featured": true
+  },
+  {
     "title": "StockPilot - Smart Inventory Management System",
     "slug": "stockpilot",
     "category": "Full-Stack",

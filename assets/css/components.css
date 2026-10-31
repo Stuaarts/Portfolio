@@ -395,7 +395,8 @@
 .modal-figure img {
   width: 100%;
   aspect-ratio: 1.45;
-  object-fit: cover;
+  padding: 0.5rem;
+  object-fit: contain;
 }
 
 .gallery-strip {
@@ -416,7 +417,8 @@
 .gallery-thumb img {
   width: 100%;
   aspect-ratio: 1.2;
-  object-fit: cover;
+  padding: 0.25rem;
+  object-fit: contain;
 }
 
 .modal-links {

@@ -1,5 +1,68 @@
 [
   {
+    "title": "Bliss - Durable Service Marketplace",
+    "slug": "bliss",
+    "category": "Full-Stack",
+    "year": "2026",
+    "subtitle": "Java 21, Quarkus, PostgreSQL, Keycloak, and Flutter marketplace for service requests, quotes, bookings, chat, reviews, and disputes.",
+    "summary": "Cross-platform service marketplace with durable booking and dispute workflows, provider operations, participant-only messaging, simulated payments, and verified web and mobile flows.",
+    "description": "Bliss is a two-sided marketplace where customers request or directly book local services and providers manage offerings, send quotes, complete work, and communicate through the booking lifecycle. The preserved prototype was rebuilt as a Java 21 and Quarkus modular monolith with PostgreSQL, Keycloak authentication, durable Quarkus Flow orchestration, and a Flutter client verified across web, Android, and an iOS simulator.",
+    "tags": ["Java 21", "Quarkus", "Quarkus Flow", "Flutter", "PostgreSQL", "Flyway", "Keycloak", "OIDC / PKCE", "Docker", "GitHub Actions"],
+    "highlights": [
+      "Rebuilt the original prototype into a modular Quarkus backend and Flutter client with public discovery, provider onboarding, and owned service management.",
+      "Implemented customer requests, provider quotes, direct bookings, protected booking actions, and stale-price and duplicate-submission safeguards.",
+      "Used durable BookingLifecycleFlow and DisputeFlow workflows for human wait states, deadlines, retries, compensation, and idempotent simulated settlement.",
+      "Added participant-only booking chat, bounded message pagination, safe send retries, completed-booking reviews, and dispute evidence with admin decisions.",
+      "Verified request-to-review flows on web, Android, and an iOS simulator, with backend, Flutter, process-restart, and CI coverage.",
+      "Added an isolated PostgreSQL backup and restore rehearsal plus an operational recovery runbook without exposing real user data."
+    ],
+    "image": "/assets/img/projects/bliss/01-booking-completed.png",
+    "gallery": [
+      "/assets/img/projects/bliss/01-booking-completed.png",
+      "/assets/img/projects/bliss/02-activity-web.png",
+      "/assets/img/projects/bliss/03-android-booking.png",
+      "/assets/img/projects/bliss/04-android-chat.png",
+      "/assets/img/projects/bliss/05-android-review.png",
+      "/assets/img/projects/bliss/06-android-dispute.png"
+    ],
+    "links": {
+      "github": "https://github.com/Stuaarts/Bliss"
+    },
+    "credentials": [],
+    "note": "Bliss currently runs as a local project with simulated payments only; no real money moves. Web, Android, and iOS simulator request-to-review flows are verified, while secondary iOS acceptance remains open.",
+    "featured": true
+  },
+  {
+    "title": "ServiceDesk Automatization",
+    "slug": "servicedesk-automatization",
+    "category": "Desktop App",
+    "year": "2026",
+    "subtitle": "Local-first Windows diagnostics desktop app built with Electron, React, TypeScript, FastAPI, and Python.",
+    "summary": "Consent-driven workstation diagnostics with deterministic issue detection, guided remediation, restart-safe report history, privacy-controlled exports, and an allowlisted DNS repair flow.",
+    "description": "ServiceDesk Automatization is a local-first Windows desktop application designed to turn system diagnostics into clear, reviewable support workflows. It collects a limited set of event logs and system snapshots after explicit consent, identifies common workstation issues, presents guided checks, and keeps report and repair history on the device.",
+    "tags": ["Electron", "React", "TypeScript", "Vite", "FastAPI", "Python", "Windows", "Local-First", "Vitest", "GitHub Actions"],
+    "highlights": [
+      "Built an Electron and React desktop interface backed by a FastAPI and Python collector that stays on the local Windows machine.",
+      "Added explicit consent before reading recent event logs, CPU, memory, disk, uptime, process, and Wi-Fi snapshots.",
+      "Implemented deterministic detection for application crashes, service failures, low disk space, DNS and network problems, Windows Update, drivers, and Wi-Fi health.",
+      "Created restart-safe report history with retention controls, semantic comparisons, deletion, and privacy-controlled JSON and PDF exports.",
+      "Designed an allowlisted DNS cache repair with disclosure, one-time approval, native confirmation, timeout handling, verification, recovery, and a redacted audit record.",
+      "Added automated frontend and backend checks plus packaged Windows alpha and installer acceptance documentation."
+    ],
+    "image": "/assets/img/projects/servicedesk/01-dashboard.png",
+    "gallery": [
+      "/assets/img/projects/servicedesk/01-dashboard.png",
+      "/assets/img/projects/servicedesk/02-issues-light.png",
+      "/assets/img/projects/servicedesk/03-reports.png"
+    ],
+    "links": {
+      "github": "https://github.com/Stuaarts/ServiceDesk-Automatization-"
+    },
+    "credentials": [],
+    "note": "This is an internal Windows alpha with no cloud account, synchronization, analysis, or telemetry path. Portfolio screenshots use the project's documented diagnostic fixture data.",
+    "featured": true
+  },
+  {
     "title": "VenueOps - Event Operations Platform",
     "slug": "venueops",
     "category": "Full-Stack",
@@ -39,6 +102,35 @@
     "featured": true
   },
   {
+    "title": "PokeBot Gen 3 - Autonomous Emerald Extension",
+    "slug": "pokebot-gen3",
+    "category": "Open Source",
+    "year": "2026",
+    "subtitle": "Python automation, persisted campaign control, and a React telemetry dashboard extending the open-source Pokebot Gen 3 project.",
+    "summary": "Open-source engineering work that extends autonomous Pokemon Emerald progression through Hall of Fame checkpoints with recovery, integrity guardrails, SQLite state, and live observer telemetry.",
+    "description": "This project is a fork of 40Cakes/pokebot-gen3 that Lucas extended toward autonomous Pokemon Emerald story completion and guarded post-game collection. The work adds campaign lifecycle control, restart-safe checkpoints, navigation and battle preparation, persistent telemetry, and a browser observer dashboard while preserving the upstream project's normal-controller-input integrity model.",
+    "tags": ["Python", "React", "TypeScript", "Vite", "WebSocket", "SQLite", "aiohttp", "mGBA", "pytest", "Open Source"],
+    "highlights": [
+      "Extended the autonomous Emerald story path through eight badges, HM traversal, party preparation, the Elite Four, Wallace, and a durable Hall of Fame checkpoint.",
+      "Added persisted campaign lifecycle controls and restart recovery so long-running automation can resume from verified checkpoints.",
+      "Built a React and Vite observer dashboard with REST startup state, WebSocket telemetry, world position, party status, runtime events, and operator lifecycle controls.",
+      "Used SQLite-backed state and source and input fingerprints to keep campaign evidence and continuation decisions auditable.",
+      "Added bounded post-game collection workflows with protected specimen identities and fail-closed safety checks.",
+      "Kept the integrity boundary explicit: observe game memory and send normal controller input without distributing ROMs, saves, or BIOS files, or injecting items and event flags."
+    ],
+    "image": "/assets/img/projects/pokebot/01-dashboard.png",
+    "gallery": [
+      "/assets/img/projects/pokebot/01-dashboard.png",
+      "/assets/img/projects/pokebot/02-hall-of-fame.png"
+    ],
+    "links": {
+      "github": "https://github.com/Stuaarts/PokeBot"
+    },
+    "credentials": [],
+    "note": "This is a GPL-3.0 open-source fork of 40Cakes/pokebot-gen3. M3 checkpoint 10 and Hall of Fame completion from prepared checkpoints are verified; an uninterrupted fresh-save acceptance run remains pending. Users must supply their own legal game files.",
+    "featured": true
+  },
+  {
     "title": "StockPilot - Smart Inventory Management System",
     "slug": "stockpilot",
     "category": "Full-Stack",
@@ -75,7 +167,7 @@
       { "label": "Staff", "value": "staff@demo.com / Demo123!" }
     ],
     "note": "The Render PostgreSQL demo database is on a free plan and may expire or reset over time.",
-    "featured": true
+    "featured": false
   },
   {
     "title": "Hair Stylist Booking Web Application",
@@ -101,6 +193,6 @@
     "links": {},
     "credentials": [],
     "note": "This project is shown as portfolio case study material rather than a public demo.",
-    "featured": true
+    "featured": false
   }
 ]
